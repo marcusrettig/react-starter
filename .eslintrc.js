@@ -6,4 +6,10 @@ module.exports = {
     'prettier/unicorn',
   ],
   plugins: ['unicorn'],
+  env: {
+    browser: true,
+  },
+  rules: {
+    'react/jsx-filename-extension': 'off',
+  },
 };
