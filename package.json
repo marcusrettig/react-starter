@@ -1,0 +1,8 @@
+{
+  "name": "react-starter",
+  "version": "1.0.0",
+  "private": true,
+  "description": "React Starter",
+  "author": "Marcus Rettig",
+  "license": "MIT"
+}
