@@ -3,6 +3,7 @@ module.exports = {
     'airbnb',
     'plugin:unicorn/recommended',
     'prettier',
+    'prettier/react',
     'prettier/unicorn',
   ],
   plugins: ['unicorn'],
