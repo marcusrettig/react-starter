@@ -1,7 +1,8 @@
+import PropTypes from 'prop-types';
 import React from 'react';
+import { hot } from 'react-hot-loader';
 import { connect } from 'react-redux';
 import styled from 'styled-components';
-import PropTypes from 'prop-types';
 import * as counterActions from '../store/counter';
 
 const Title = styled.h1`
@@ -38,7 +39,7 @@ App.propTypes = {
   decrement: PropTypes.func.isRequired,
 };
 
-export default connect(
+const AppContainer = connect(
   ({ counter }) => ({
     counter,
   }),
@@ -47,3 +48,5 @@ export default connect(
     decrement: () => dispatch(counterActions.decrement()),
   }),
 )(App);
+
+export default hot(module)(AppContainer);
