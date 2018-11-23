@@ -2,13 +2,15 @@ module.exports = {
   extends: [
     'airbnb',
     'plugin:unicorn/recommended',
+    'plugin:jest/recommended',
     'prettier',
     'prettier/react',
     'prettier/unicorn',
   ],
-  plugins: ['unicorn'],
+  plugins: ['unicorn', 'jest'],
   env: {
     browser: true,
+    'jest/globals': true,
   },
   rules: {
     'react/jsx-filename-extension': 'off',
